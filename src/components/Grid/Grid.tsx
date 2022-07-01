@@ -1,5 +1,5 @@
 import styled, { StyledComponent } from 'styled-components';
-import  { CSSProperties } from 'react';
+import { CSSProperties } from 'react';
 
 export interface GridItemProps {
   alignItems?: CSSProperties['alignItems'];
