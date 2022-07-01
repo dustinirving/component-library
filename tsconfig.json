@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
     "declaration": true,
     "declarationDir": "build",
     "module": "esnext",
@@ -10,14 +9,10 @@
     "jsx": "react",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "storybook-static",
-    "src/**/*.stories.tsx",
-    "src/**/*.test.tsx"
-  ]
+  "exclude": ["node_modules", "build", "storybook-static"]
 }
