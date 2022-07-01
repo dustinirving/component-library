@@ -9,7 +9,7 @@
   "types": "build/index.d.ts",
   "description": "React component library using Rollup, TypeScript, Styled-Components and Storybook",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/solinkcorp"
+    "registry": "https://npm.pkg.github.com/"
   },
   "sideEffects": false,
   "scripts": {
