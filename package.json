@@ -19,13 +19,19 @@
     "url": "https://github.com/dustinirving/react-styled-components-library/issues"
   },
   "scripts": {
-    "start": "start-storybook -p 6006",
-    "build": "rollup -c",
-    "test": "jest",
+    "build": "rollup -c && rm -rf build/src",
+    "test": "npm run lint && jest --runInBand",
     "test:watch": "jest --watch",
+    "lint": "npm run lint:types",
+    "lint:types": "tsc --noEmit",
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
+    "generate": "node ./util/create-component",
     "prepublishOnly": "npm run build",
-    "prepare": "husky install"
+    "deploy": "build-storybook && gh-pages -d storybook-static && rm -r storybook-static",
+    "prepare": "husky install && npm run build",
+    "pretty-quick": "pretty-quick"
   },
   "dependencies": {
     "styled-components": "^5.3.5"
@@ -42,6 +48,7 @@
     "@types/react-dom": "^16.9.14",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
@@ -50,9 +57,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "rollup": "^2.56.3",
-    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-typescript2": "^0.29.0",
     "sass-loader": "^10.2.0",
     "ts-jest": "^26.5.6",
