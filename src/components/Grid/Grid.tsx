@@ -3,38 +3,38 @@ import { GridProps, GridItemProps } from './Grid.types';
 
 const Grid = styled.div<GridProps>`
   display: grid;
-  width: ${({ width }) => width || `100%`};
-  line-height: ${({ lineHeight }) => lineHeight || `initial`};
-  height: ${({ height }) => height || `auto`};
-  grid-template-rows: ${({ gridTemplateRows }) => gridTemplateRows || '100%'};
-  grid-template-columns: ${({ gridTemplateColumns }) => gridTemplateColumns || '100%'};
+  width: ${({ width }) => width};
+  line-height: ${({ lineHeight }) => lineHeight};
+  height: ${({ height }) => height};
+  grid-template-rows: ${({ gridTemplateRows }) => gridTemplateRows};
+  grid-template-columns: ${({ gridTemplateColumns }) => gridTemplateColumns};
   gap: ${({ gap, gridColumnGap, gridRowGap }) =>
     gap ? gap : `${gridRowGap || 0} ${gridColumnGap || 0}`};
-  justify-items: ${({ justifyItems }) => justifyItems || 'center'};
-  align-items: ${({ alignItems }) => alignItems || 'center'};
-  justify-content: ${({ justifyContent }) => justifyContent || 'start'};
-  align-content: ${({ alignContent }) => alignContent || 'start'};
-  position: ${({ position }) => position || 'relative'};
-  background: ${({ background }) => background || 'initial'};
-  color: ${({ color }) => color || 'inherit'};
-  z-index: ${({ zIndex }) => zIndex || 'auto'};
-  user-select: ${({ userSelect }) => userSelect || 'auto'};
+  justify-items: ${({ justifyItems }) => justifyItems};
+  align-items: ${({ alignItems }) => alignItems};
+  justify-content: ${({ justifyContent }) => justifyContent};
+  align-content: ${({ alignContent }) => alignContent};
+  position: ${({ position }) => position};
+  background: ${({ background }) => background};
+  color: ${({ color }) => color};
+  z-index: ${({ zIndex }) => zIndex};
+  user-select: ${({ userSelect }) => userSelect};
 `;
 
 Grid.displayName = 'Grid';
 
 const GridItem = styled.div<GridItemProps>`
-  align-items: ${({ alignItems }) => alignItems || 'center'};
-  align-self: ${({ alignSelf }) => alignSelf || 'center'};
+  align-items: ${({ alignItems }) => alignItems};
+  align-self: ${({ alignSelf }) => alignSelf};
   display: ${({ display }) => display};
-  grid-column: ${({ gridColumn }) => gridColumn || 'auto / auto'};
-  grid-row: ${({ gridRow }) => gridRow || 'auto / auto'};
-  height: ${({ height }) => height || `auto`};
+  grid-column: ${({ gridColumn }) => gridColumn};
+  grid-row: ${({ gridRow }) => gridRow};
+  height: ${({ height }) => height};
   justify-content: ${({ justifyContent }) => justifyContent};
-  justify-self: ${({ justifySelf }) => justifySelf || 'center'};
-  position: ${({ position }) => position || 'relative'};
-  width: ${({ width }) => width || `auto`};
-  z-index: ${({ zIndex }) => zIndex || 'auto'};
+  justify-self: ${({ justifySelf }) => justifySelf};
+  position: ${({ position }) => position};
+  width: ${({ width }) => width};
+  z-index: ${({ zIndex }) => zIndex};
 `;
 
 const defaultExport: StyledComponent<'div', any, GridProps, never> & {

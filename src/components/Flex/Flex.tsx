@@ -2,25 +2,25 @@ import styled, { StyledComponent } from 'styled-components';
 import { FlexProps, FlexItemProps } from './Flex.types';
 
 const Flex = styled.div<FlexProps>`
-  align-items: ${({ alignItems }) => alignItems || 'flex-start'};
-  align-self: ${({ alignSelf }) => alignSelf || 'auto'};
+  align-items: ${({ alignItems }) => alignItems};
+  align-self: ${({ alignSelf }) => alignSelf};
   display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection || 'row'};
-  flex-wrap: ${({ flexWrap }) => flexWrap || 'inherit'};
-  height: ${({ height }) => height || `auto`};
-  justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
-  position: ${({ position }) => position || `relative`};
-  width: ${({ width }) => width || `100%`};
-  z-index: ${({ zIndex }) => zIndex || 'auto'};
+  flex-direction: ${({ flexDirection }) => flexDirection};
+  flex-wrap: ${({ flexWrap }) => flexWrap};
+  height: ${({ height }) => height};
+  justify-content: ${({ justifyContent }) => justifyContent};
+  position: ${({ position }) => position};
+  width: ${({ width }) => width};
+  z-index: ${({ zIndex }) => zIndex};
 `;
 
 Flex.displayName = 'Flex';
 
 const FlexItem = styled.div<FlexItemProps>`
-  align-self: ${({ alignSelf }) => alignSelf || 'flex-start'};
-  flex: ${({ flex }) => flex || '0 1 auto'};
-  flex-basis: ${({ flexBasis }) => flexBasis || 'none'};
-  order: ${({ order }) => order || '0'};
+  align-self: ${({ alignSelf }) => alignSelf};
+  flex: ${({ flex }) => flex};
+  flex-basis: ${({ flexBasis }) => flexBasis};
+  order: ${({ order }) => order};
 `;
 
 const defaultExport: StyledComponent<'div', any, FlexProps, never> & {
