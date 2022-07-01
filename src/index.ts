@@ -1,3 +1,4 @@
-import TestComponent from "./TestComponent";
+import { Flex } from './components/Flex';
+import { Grid } from './components/Grid';
 
-export { TestComponent };
+export { Flex, Grid };
