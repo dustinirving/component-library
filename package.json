@@ -1,5 +1,5 @@
 {
-  "name": "react-styled-components-library",
+  "name": "@dustinirving/component-library",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
@@ -8,9 +8,6 @@
   ],
   "types": "build/index.d.ts",
   "description": "React component library using Rollup, TypeScript, Styled-Components and Storybook",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "sideEffects": false,
   "scripts": {
     "build": "rollup -c",
@@ -30,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dustinirving/react-styled-components-library.git"
+    "url": "git+https://github.com/dustinirving/component-library.git"
   },
   "keywords": [
     "React",
@@ -43,9 +40,9 @@
   "author": "Dustin Irving",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dustinirving/react-styled-components-library/issues"
+    "url": "https://github.com/dustinirving/component-library/issues"
   },
-  "homepage": "https://github.com/dustinirving/react-styled-components-library#readme",
+  "homepage": "https://github.com/dustinirving/component-library#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
