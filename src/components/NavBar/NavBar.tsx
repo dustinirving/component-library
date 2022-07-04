@@ -17,8 +17,6 @@ const Navbar: React.FC<NavBarProps> = (props) => {
 };
 
 const Wrapper = styled.div`
-  position: fixed;
-  top: 0;
   width: 100%;
   background: var(--color-bg-primary);
   height: 60px;
