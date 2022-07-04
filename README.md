@@ -1,4 +1,4 @@
-# @dustinirving/component-library
+# component-library
 
 A component library for React projects.
 
