@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { SelectProps } from './Select.types';
 const Select: React.FC<SelectProps> = (props) => {
-  const { initialSelectedValue, options } = props;
-  const [optionsOpen, setOptionsOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState(initialSelectedValue);
-  useEffect(() => {
-    setSelectedValue(initialSelectedValue);
-  }, [initialSelectedValue]);
+  const { options, optionsOpen, selectedValue, setOptionsOpen, setSelectedValue } = props;
   return (
     <Wrapper>
       <Selection onClick={() => setOptionsOpen(!optionsOpen)}>

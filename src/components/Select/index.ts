@@ -1,2 +1,4 @@
 import Select from './Select';
-export { Select };
+import useSelect from './useSelect';
+import { SelectProps, useSelectProps } from './Select.types';
+export { Select, useSelect, SelectProps, useSelectProps };

@@ -6,4 +6,4 @@ export { Flex } from './components/Flex';
 export { Grid } from './components/Grid';
 export { NavBar } from './components/NavBar';
 export { Colors, CSSResets } from './components/GlobalStyles';
-export { Select } from './components/Select';
+export { Select, useSelect, SelectProps, useSelectProps } from './components/Select';
